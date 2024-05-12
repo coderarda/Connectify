@@ -1,0 +1,24 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="Connectify.Controls.Sidebar"
+             xmlns:controls="clr-namespace:Connectify.Controls">
+    <DockPanel Margin="12" VerticalAlignment="Stretch">
+        <DockPanel.Styles>
+            <Style Selector="ListBoxItem">
+                <Setter Property="FontSize" Value="13" />
+            </Style>
+        </DockPanel.Styles>
+        <TextBlock Text="Servers" DockPanel.Dock="Top" FontWeight="Bold" Margin="10 0 0 10" />
+        <ListBox DockPanel.Dock="Left" CornerRadius="5" Margin="5" VerticalAlignment="Stretch"> 
+            <ListBox.Items>
+                <controls:ListItem Title="ServerName" />
+                <controls:ListItem Title="ServerName2" />
+                <controls:ListItem Title="ServerName3" />
+                <controls:ListItem Title="ServerName4" />
+            </ListBox.Items>
+        </ListBox>
+    </DockPanel>
+</UserControl>
